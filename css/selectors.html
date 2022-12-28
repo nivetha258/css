@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> css selectors</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	
+	</style>
+</head>
+<body>
+
+	<section class="background">
+		<div class="background-color">
+			
+		</div>
+		<div class="background-image">
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="background-property">
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+	</section>
+	<div></div>
+	<div>
+		<h2 class="class1">Selectors</h2>
+		<p>Universal selector (*)</p>
+		<p>Element selector</p>
+		<p>Grouping  selector</p>
+		<p id="id">id selector</p>
+		<p class="class">Class selector</p>
+	</div>
+	<div class="combinators">
+		<h2>Combinators</h2>
+		<p>Adjacent sibling  selector</p>
+		<p>Child selector<span>.</span></p>
+		<p>Decendant selectors</p>
+		<p>General sibling selector</p>
+	</div>
+	<div class="pseudoclasses">
+		<h2>Pseudo Classes</h2>
+		<p><a href="#target">link,visited,hover,active</a></p>
+		<p>empty</p>
+		<p>p:first-child</p>
+		<p>p:first-of-type</p>
+		<p>p:last-child</p>
+		<p>p:last-of-type</p>
+		<p>:not(p)</p>
+		<p>p:nth-child(2)</p>
+		<p id="target">p:nth-last-child(2)</p>
+		<p>p:nth-last-of-type(2)</p>
+		<p>p:nth-of-type(2)</p>
+		<p>p:only-of-type</p>
+		<p>p:only-child</p>
+		<p>input:checked</p>
+		<p>input:disabled</p>
+		<p>input:enabled</p>
+		<p>input:focus</p>
+		<p>input:in-range</p>
+		<p>input:invalid</p>
+		<p>input:out-of-range</p>
+		<p>input:read-only</p>
+		<p>input:read-write</p>
+		<p>input:required</p>
+		<p>input:valid</p>
+		<p>root</p>
+		<p>:target</p>
+				<input type="text" disabled>
+				<input type="radio" name="name" value="nivetha"> nivetha</input>
+				<input type="radio" name="name" value="nive"> nive</input>
+				<input type="number" max="10" min="4" value="4">
+				<input type="email" novalidate>	
+				<input type="text" value=" word" readonly >
+	</div>
+	<div class="pseudoelement">
+		<h2>Pseudo Elements</h2>
+		<p>p::after</p>
+		<p>p::before</p>
+		<p>p ::first-letter</p>
+		<p>p::first-line</p>
+		<p>p::selection</p>
+	</div>
+	<div>
+		<ul class="ul">
+			<li>blue</li>
+			<li>red</li>
+		
+		</ul>
+		<ol class="ol">
+			<li>html</li>
+			<li>css</li>
+			<li>bootstrap</li>
+		</ol>
+	
+	</div>
+	
+	<section class=" attr-selectors">
+		<div class="attribute">
+			<h2>Attribute selector</h2>
+			<p><a href="https://www.w3schools.com">w3schools.com</a></p>
+			<p><a href="http://www.disney.com" target="_blank">disney.com</a></p>
+			<p><a href="http://www.wikipedia.org" target="_top">wikipedia.org</a></p>
+		</div>
+		<div class="onlyvalue">
+			<h2>[attribute="value"]selector </h2>
+			<p><a href="https://www.w3schools.com">w3schools.com</a></p>
+			<p><a href="http://www.disney.com" target="_blank">disney.com</a></p>
+			<p><a href="http://www.wikipedia.org" target="_blank _top">wikipedia.org</a></p>
+		</div>
+		<div class="value">
+			<h2>[attribute~="value"] selector</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flowers">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="lotus flowers">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+		<div class="exactvalue-hypen">
+			<h2>[attribute|="value"] Selector</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower-lotus late">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="late flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="lotus flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+		<div class="start-notword">
+			<h2>[attribute^="value"] Selector</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="lotus flowers">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+		<div class="end-notword">
+			<h2>[attribute$="value"] Selector</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+		<div class="whole-notword">
+			<h2>[attribute*="value"] Selector</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="flower flower-lotus">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="lotus flowers">All images with the title attribute containing the word "flower" get a yellow border.</p>
+			<p class="trees">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+	</section>
+	<section class="box-section">
+		<div class="box-model">
+			<h2>box-model</h2>
+			<p class="flower">All images with the title attribute containing the word "flower" get a yellow border.</p>
+		</div>
+	</section>
+	<section class="Text -properties">
+		<div class="text-color">
+			<h2>Text-color</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="text-alignment">
+			<h2>Text-alignment</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for <span>formatting</span> text. </p>
+			<p>CSS has a lot of <span>properties</span> for formatting text. </p>
+		</div>
+		<div class="text-decoration">
+			<h2>Text-decoration</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="text-transform">
+			<h2>Text-transformation</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="text-spacing">
+			<h2>Text spacing</h2>
+			<p>CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text.CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		
+	</section>
+	<section class="font-properties">	
+		<div class="font-family">
+			<h2>font-properties</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="font-size">
+			<h2>font-family</h2>
+			<p><span>CSS has a lot of properties</span> for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+		<div class="font">
+			<h2>font-properties</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>
+	</section>
+	<section>
+		<div class="shadow">
+			<p>TEXT-SHADOW</p>
+		</div>
+	</section>
+	<section>
+		<div class="colors">
+			<h6>rgb color</h6>
+			<h5>hex color</h5>
+			<h4>hsl color</h4>
+			<h3>hsl color</h3>
+			<h2>hsl color</h2>
+		<div>
+		<div class="linear-gradient">linear-gradient</div>
+	
+	</section>
+	<section class="unit-section">
+		<div class="units">
+			<h2>font-properties</h2>
+			<p>CSS has a lot of properties for formatting text. </p>
+			<p>CSS has a lot of properties for formatting text. </p>
+		</div>	
+	</section>
+
+	
+</body>
+
+</html>
